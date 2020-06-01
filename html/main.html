@@ -24,11 +24,10 @@
 	<script type="text/javascript" src="../js/funyalert.js"></script>
 
 <style type="text/css">
-#pinContainer{width:100%;height:100%;overflow:hidden}
-.page_c{height:100%;width:100%;position:absolute}
+
 
 /*  헤더  */
-header{/*width:100%;position:absolute;top:0;left:0;z-index:2*/}
+header{width:100%;position:fixed;top:0;left:0;z-index:2}
 header h1{width:250px;margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
 
@@ -41,36 +40,8 @@ header h1 img{width:100%}
 .logo{width:250px;display:inline-block;position:absolute;top:10px;left:50%;margin-left:-125px}
 .logo img{width:100%}
 
-#main{width:100%;height:100%;overflow:hidden}
-.panel{position:absolute;top:0;left:0;width:100%;height:100%}
-
-.main1{background-image:url(../img/main1.jpg);background-attachment:fixed;background-size:cover}
-.main2{background-image:url(../img/main2.jpg);background-size:cover;background-attachment:fixed}
-.main3{background-image:url(../img/main3.jpg);background-size:cover;background-attachment:fixed}
-.main4{background-image:url(../img/main4.jpg);background-size:cover;background-attachment:fixed}
-
-.footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #000}
-.footer ul{float:left;margin:2% 0 0 10%;line-height:25px}
-.footer ul h1{}
-.footer ul li{cursor:pointer}
-.footer ul li:first-child{font-size:13px;font-weight:600;padding-bottom:1%}
-
-.footer>ul>li a:hover{color:gray;transition:.3s}
-.footer .cx{width:15%;margin-left:10%}
-.footer .legal{width:15%;margin-left:5%}
-.footer .company{width:15%;margin-left:8%}
-.footer .sns{width:15%;margin-left:10%}
-.footer .sns li{width:16px;float:left;padding-right:7%}
-.footer ul.sns li:first-child{width:100%;}
-.footer .sns li a:hover{opacity:50%}
-.footer .sns img{width:100%}
-.footer2{width:80%;margin:0 auto;overflow:hidden}
-.footer2 li{line-height:15px;float:left}
-.footer2 li.copy{width:10%}
-.footer2 li.address{float:right;width:850px}
-
 .header_open_menu{float:left;width:400px;margin-left:3%;}
-.header_open_menu li{float:left;line-height:20px;}
+.header_open_menu li{float:left;line-height:20px;font-size:.75em;}
 .header_open_menu li a{float:left;padding:17px 10px 18px 10px;}
 .header_open_menu li a:hover{text-decoration:underline}
 
@@ -89,6 +60,40 @@ header h1 img{width:100%}
 .header_open_menu li ul{display:none;padding-top:10px}
 .header_open_menu li ul li{float:none;width:80px;height:18px;line-height:18px}
 .header_open_menu li ul li a{float:none;padding:5px 10px;}
+
+#pinContainer{width:100%;height:100%;overflow:hidden}
+#pinContainer{background-image:url(../img/oioi_05.png);background-size:cover;text-align:center;position:relative;height:100%;min-height:500px;min-width:100%;height:100vh}
+
+.page_c{height:100%;width:100%;position:absolute}
+#main{width:100%;height:100%;overflow:hidden}
+.panel{position:absolute;top:0;left:0;width:100%;height:100%}
+
+.main1{background-image:url(../img/main1.jpg);background-attachment:fixed;background-size:cover}
+.main2{background-image:url(../img/main2.jpg);background-size:cover;background-attachment:fixed}
+.main3{background-image:url(../img/main3.jpg);background-size:cover;background-attachment:fixed}
+.main4{background-image:url(../img/main4.jpg);background-size:cover;background-attachment:fixed}
+
+footer{padding-bottom:30px;}
+.footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #ccc}
+.footer ul{float:left;margin:2% 0 0 10%;line-height:25px}
+.footer ul h1{}
+.footer ul li{cursor:pointer;font-size:.75em;line-height:20px;}
+.footer ul li:first-child{font-size:.9em;font-weight:600;padding-bottom:1%}
+
+.footer>ul>li a:hover{color:gray;transition:.3s}
+.footer .cx{width:15%;margin-left:10%}
+.footer .legal{width:15%;margin-left:5%}
+.footer .company{width:15%;margin-left:8%;font-size:.87em;}
+.footer .sns{width:15%;margin-left:10%}
+.footer .sns li{width:16px;float:left;padding-right:7%}
+.footer ul.sns li:first-child{width:100%;}
+.footer .sns li a:hover{opacity:50%}
+.footer .sns img{width:100%}
+.footer2{width:80%;margin:0 auto;overflow:hidden}
+.footer2 li{line-height:15px;float:left;font-size:.75em;}
+.footer2 li.copy{width:10%}
+.footer2 li.address{float:right;width:850px}
+
 </style>
 
 </head>
@@ -105,7 +110,7 @@ header h1 img{width:100%}
 		</div>
 
 		<div class="header_menu">
-			<a href="oioi_main.html" class="logo"><img src="img/oioi_logo.png"></a>
+			<a href="oioi_main.html" class="logo"><img src="../img/oioi_logo.png"></a>
 
 			<ul class="header_open_menu">
 				<li class="list shop"><a href="#">신상품</a></li>
@@ -122,7 +127,7 @@ header h1 img{width:100%}
 			</ul>
 
 			<ul class="menu_icon header_open_menu">
-				<li class="list search"><a href="#"><img src="img/search.png"></a></li>
+				<li class="list search"><a href="#"><img src="../img/search.png"></a></li>
 				<li class="list mall"><a href="#">KR</a>
 					<ul class="submenu">
 						<li><a href="#">EN</a></li>
@@ -130,11 +135,11 @@ header h1 img{width:100%}
 						<li><a href="#">JP</a></li>
 					</ul>
 				</li>
-				<li class="list intro"><a href="oioi_main.html"><img src="img/intro.png"></a></li>
-				<li class="list mypage"><a href="#"><img src="img/mypage.png"></a></li>
+				<li class="list intro"><a href="oioi_main.html"><img src="../img/intro.png"></a></li>
+				<li class="list mypage"><a href="#"><img src="../img/mypage.png"></a></li>
 				<li class="list cart">
 					<a href="#">
-						<img src="img/cart.png">
+						<img src="../img/cart.png">
 						<span>(1000)</span>
 					</a>
 				</li>
@@ -142,10 +147,68 @@ header h1 img{width:100%}
 		</div>
 	</header>
 
-	<script>
+	<div id="content-wrapper">
+		<div>
+			<div class="scrollContent">
+				<section id="section_wipes">
+					<div id="pinContainer">
+						<section class="page_c main1"></section>
+						<section class="page_c main2"></section>
+						<section class="page_c main3"></section>
+						<section class="page_c main4"></section>
+					</div>
+					<footer>
+						<div class="footer">
+							<ul class="cx">
+								<li>고객서비스</li>
+								<li><a href="#">문의</a></li>
+								<li><a href="#">배송</a></li>
+								<li><a href="#">교환 및 환불</a></li>
+								<li><a href="#">주문조회</a></li>
+							</ul>
+							<ul class="legal">
+								<li>법적고지</li>
+								<li><a href="#">이용약관</a></li>
+								<li><a href="#">개인정보 보호정책</a></li>
+							</ul>
+							<ul class="company">
+								<li>회사</li>
+								<li><a href="#">소개</a></li>
+								<li><a href="#">채용</a></li>
+								<li><a href="#">매장</a></li>
+								<li><a href="#">문의</a></li>
+							</ul>
+							<ul class="sns">
+								<li>뉴미디어</li>
+								<li><a href="#"><img src="../img/facebook.png" alt="페이스북 아이콘"></a></li>
+								<li><a href="https://www.instagram.com/oioikorea/" target="_blank" ><img src="../img/insta.png" alt="인스타그램 아이콘"></a></li>
+								<li><a href="#"><img src="../img/youtube.png" alt="유투브 아이콘"></a></li>
+								<li><a href="#"><img src="../img/twitter.png" alt="트위터 아이콘"></a></li>
+							</ul>
+						</div>
+						<div class="footer2">
+							<ul>
+								<li class="copy">ⓒ 2020 OiStudio</li>
+								<li class="address">
+									주)오아이스튜디오&nbsp;
+									대표자명:정예슬&nbsp; 
+									사업자 번호:191-81-00440&nbsp;
+									통신판매신고번호:서울금천 0915&nbsp;
+									주소:서울특별시 성동구 광나루로 130, 401호&nbsp;
+									<span>전화번호:070-7726-5252</span>
+								</li>
+							</ul>
+						</div>
+					</footer>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+<script>
 
 	$(document).ready(function(){
-
 		$('.header_open_menu li.list').hover(function(){
 			var target = $(this);
 			var childUl = $(this).children('ul')
@@ -159,34 +222,6 @@ header h1 img{width:100%}
 			}
 		})
 
-	})
-
-
-
-	</script>
-
-<style>
-#pinContainer{background-image:url(../img/oioi_05.png);background-size:cover;text-align:center;position:relative;height:100%;min-height:500px;min-width:100%;height:100vh}
-</style>
-	<div id="content-wrapper">
-		<div id="example-wrapper">
-			<div class="scrollContent">
-				<section class="demo" id="section_wipes">
-					<div id="pinContainer">
-						<section class="page_c main1"></section>
-						<section class="page_c main2"></section>
-						<section class="page_c main3"></section>
-						<section class="page_c main4"></section>
-					</div>
-				</section>
-
-			</div>
-		</div>
-	</div>
-
-<script>
-
-	$(document).ready(function(){
 		var controller = new ScrollMagic.Controller();
 		var wipeAnimation = new TimelineMax()
 			.fromTo("section.page_c.main1", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
@@ -196,7 +231,7 @@ header h1 img{width:100%}
 		new ScrollMagic.Scene({
 			triggerElement: "#pinContainer",
 			triggerHook: "onLeave",
-			duration: "300%"
+			duration: "600%"
 		})
 		.setPin("#pinContainer")
 		.setTween(wipeAnimation)
