@@ -23,79 +23,6 @@
 	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 	<script type="text/javascript" src="../js/funyalert.js"></script>
 
-<style type="text/css">
-
-
-/*  헤더  */
-header{width:100%;position:fixed;top:0;left:0;z-index:2}
-header h1{width:250px;margin:0 auto;margin-top:10px}
-header h1 img{width:100%}
-
-/*  띠팝업  */
-.header_notice{width:100%;height:25px;color:#fff;background-color:#32cd32;font-size:10pt;z-index:2}
-.header_notice marquee{height:13px;color:#02f;line-height:18px;scrolldelay:1000;z-index:2}
-
-.header_menu{position:relative}
-.header_menu:after{content:'';display:block;clear:both}
-.logo{width:250px;display:inline-block;position:absolute;top:10px;left:50%;margin-left:-125px}
-.logo img{width:100%}
-
-.header_open_menu{float:left;width:400px;margin-left:3%;}
-.header_open_menu li{float:left;line-height:20px;font-size:.75em;}
-.header_open_menu li a{float:left;padding:17px 10px 18px 10px;}
-.header_open_menu li a:hover{text-decoration:underline}
-
-.header_open_menu.menu_icon{float:right;margin-right:50px;margin-left:0;width:auto;}
-.header_open_menu.menu_icon li{float:left;margin-left:10px}
-.header_open_menu.menu_icon li:first-child{margin-left:0}
-.header_open_menu.menu_icon li a{float:left;line-height:18px;padding:18px 5px 19px 5px}
-.header_open_menu.menu_icon li img{float:left;width:18px}
-.header_open_menu.menu_icon li.cart span{margin-left:3px;color:red;display:inline-block;line-height:18px}
-.header_open_menu.menu_icon li.mall {position:relative;}
-.header_open_menu.menu_icon li.mall li{float:left;}
-.header_open_menu.menu_icon li.mall ul li{width:auto;height:auto;margin:0;}
-.header_open_menu.menu_icon li.mall ul li a{padding:3px 5px;}
-.header_open_menu li.open{}
-.header_open_menu li.open ul{display:block;position:absolute;top:35px;}
-.header_open_menu li ul{display:none;padding-top:10px}
-.header_open_menu li ul li{float:none;width:80px;height:18px;line-height:18px}
-.header_open_menu li ul li a{float:none;padding:5px 10px;}
-
-#pinContainer{width:100%;height:100%;overflow:hidden}
-#pinContainer{background-image:url(../img/oioi_05.png);background-size:cover;text-align:center;position:relative;height:100%;min-height:500px;min-width:100%;height:100vh}
-
-.page_c{height:100%;width:100%;position:absolute}
-#main{width:100%;height:100%;overflow:hidden}
-.panel{position:absolute;top:0;left:0;width:100%;height:100%}
-
-.main1{background-image:url(../img/main1.jpg);background-attachment:fixed;background-size:cover}
-.main2{background-image:url(../img/main2.jpg);background-size:cover;background-attachment:fixed}
-.main3{background-image:url(../img/main3.jpg);background-size:cover;background-attachment:fixed}
-.main4{background-image:url(../img/main4.jpg);background-size:cover;background-attachment:fixed}
-
-footer{padding-bottom:30px;}
-.footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #ccc}
-.footer ul{float:left;margin:2% 0 0 10%;line-height:25px}
-.footer ul h1{}
-.footer ul li{cursor:pointer;font-size:.75em;line-height:20px;}
-.footer ul li:first-child{font-size:.9em;font-weight:600;padding-bottom:1%}
-
-.footer>ul>li a:hover{color:gray;transition:.3s}
-.footer .cx{width:15%;margin-left:10%}
-.footer .legal{width:15%;margin-left:5%}
-.footer .company{width:15%;margin-left:8%;font-size:.87em;}
-.footer .sns{width:15%;margin-left:10%}
-.footer .sns li{width:16px;float:left;padding-right:7%}
-.footer ul.sns li:first-child{width:100%;}
-.footer .sns li a:hover{opacity:50%}
-.footer .sns img{width:100%}
-.footer2{width:80%;margin:0 auto;overflow:hidden}
-.footer2 li{line-height:15px;float:left;font-size:.75em;}
-.footer2 li.copy{width:10%}
-.footer2 li.address{float:right;width:850px}
-
-</style>
-
 </head>
 
 <body>
@@ -111,7 +38,6 @@ footer{padding-bottom:30px;}
 
 		<div class="header_menu">
 			<a href="oioi_main.html" class="logo"><img src="../img/oioi_logo.png"></a>
-
 			<ul class="header_open_menu">
 				<li class="list shop"><a href="#">신상품</a></li>
 				<li class="sist hop"><a href="oioi_shop.html">쇼핑하기</a></li>
@@ -220,14 +146,14 @@ footer{padding-bottom:30px;}
 					$(this).addClass('open');
 				}
 			}
-		})
+		});
 
 		var controller = new ScrollMagic.Controller();
 		var wipeAnimation = new TimelineMax()
-			.fromTo("section.page_c.main1", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-			.fromTo("section.page_c.main2", 1, {x:  "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-			.fromTo("section.page_c.main3", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
-			.fromTo("section.page_c.main4", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+			.fromTo("section.page_c.main1", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+			.fromTo("section.page_c.main2", 1, {x:  "-100%"}, {x: "0%", ease: Linear.easeNone})
+			.fromTo("section.page_c.main3", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+			.fromTo("section.page_c.main4", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
 		new ScrollMagic.Scene({
 			triggerElement: "#pinContainer",
 			triggerHook: "onLeave",
@@ -235,7 +161,7 @@ footer{padding-bottom:30px;}
 		})
 		.setPin("#pinContainer")
 		.setTween(wipeAnimation)
-		.addIndicators()
+		// .addIndicators()
 		.addTo(controller);
     })
 

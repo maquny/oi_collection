@@ -8,27 +8,6 @@
 	<link rel="stylesheet" href="../css/swiper.css">
 	<link href="../css/common.css" rel="stylesheet">
 	<script src="../js/jquery-2.1.4.min.js"></script>
-	<style>
-		body,html{position:relative;height:100%}
-		body{background:#eee;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;color:#000;margin:0;padding:0}
-		.swiper-container{width:100%;height:100%}
-		.swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;background-size:cover;background-position:center center}
-		.swiper-slide img{width:100%}
-		.swiper-container-v{background:#eee}
-		.d_logo{position:absolute;top:20px;left:20px;z-index:100;}
-		.oi_logo{width:300px;}
-		.byoioi_logo{width:250px;}
-		.oicollection_mini_logo{width:50px;position:absolute;left:-60px}
-		.byoioi_mini_logo{width:50px;position:absolute;left:40px}
-		.quick_menu{width:80px;background-color:#fff;position:fixed;top:0;right:0;z-index:110;bottom:0;transition:.5s}
-		.quick_menu_open{font-size:12px;position:absolute;top:20%;left:-65px;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-transition:all .3s;transition:all .3s;padding:10px;background-color:#fff;border-left:solid 1px #ccc;border-bottom:solid 1px #ccc;border-right:solid 1px #ccc;cursor:pointer;border-radius: 0 0 5px 5px;}
-		.quick_cont{padding:10px;}
-		.quick_cont img {width:100%;}
-		.quick_menu.open{right:-80px;}
-		#video_viewport video{position:absolute;top:0;left:0;}
-		.swiper-slide a img{transform: translate3d(600px, 0px, 0px);transition-duration:0ms;}
-		.swiper-slide.swiper-slide-active a img {transform: translate3d(0px, 0px, 0px);transition-duration:600ms;}
-	</style>
 </head>
 <body>
 	<div class="quick_menu open">
@@ -181,7 +160,6 @@
 		var min_w = 300;
 		var vid_w_orig;
 		var vid_h_orig;
-
 		function fitVideo() {
 			$('#video_viewport').width(window.innerWidth);
 			$('#video_viewport').height(window.innerHeight);
