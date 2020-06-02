@@ -22,56 +22,15 @@
 	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
 	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 	<script type="text/javascript" src="../js/funyalert.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
 
 </head>
 
 <body>
-	<header>
-		<div class="header_notice">
-			<marquee vspace="5">
-				<span style="margin-right:300px; float:left;">OiOiCOLLECTION 20RESORT OPEN EVENT</span>
-				<span style="margin-right:300px; float:left;">OiOiCOLLECTION 20RESORT OPEN EVENT</span>
-				<span style="margin-right:300px; float:left;">OiOiCOLLECTION 20RESORT OPEN EVENT</span>
-				<span style="margin-right:300px; float:left;">OiOiCOLLECTION 20RESORT OPEN EVENT</span>
-			</marquee>
-		</div>
-
-		<div class="header_menu">
-			<a href="oioi_main.html" class="logo"><img src="../img/oioi_logo.png"></a>
-			<ul class="header_open_menu">
-				<li class="list shop"><a href="#">신상품</a></li>
-				<li class="sist hop"><a href="oioi_shop.html">쇼핑하기</a></li>
-				<li class="list editorial"><a href="#">에디토리얼</a></li>
-				<li class="list lookbook"><a href="#">협찬</a></li>
-				<li class="list cummunity"><a href="#">커뮤니티</a>
-					<ul class="submenu">
-						<li><a href="#">공지사항</a></li>
-						<li><a href="#">문의</a></li>
-						<li><a href="#">리뷰</a></li>	
-					</ul>
-				</li>
-			</ul>
-
-			<ul class="menu_icon header_open_menu">
-				<li class="list search"><a href="#"><img src="../img/search.png"></a></li>
-				<li class="list mall"><a href="#">KR</a>
-					<ul class="submenu">
-						<li><a href="#">EN</a></li>
-						<li><a href="#">CH</a></li>
-						<li><a href="#">JP</a></li>
-					</ul>
-				</li>
-				<li class="list intro"><a href="oioi_main.html"><img src="../img/intro.png"></a></li>
-				<li class="list mypage"><a href="#"><img src="../img/mypage.png"></a></li>
-				<li class="list cart">
-					<a href="#">
-						<img src="../img/cart.png">
-						<span>(1000)</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</header>
+	
+	<div id="header"></div>
 
 	<div id="content-wrapper">
 		<div>
@@ -83,49 +42,7 @@
 						<section class="page_c main3"></section>
 						<section class="page_c main4"></section>
 					</div>
-					<footer>
-						<div class="footer">
-							<ul class="cx">
-								<li>고객서비스</li>
-								<li><a href="#">문의</a></li>
-								<li><a href="#">배송</a></li>
-								<li><a href="#">교환 및 환불</a></li>
-								<li><a href="#">주문조회</a></li>
-							</ul>
-							<ul class="legal">
-								<li>법적고지</li>
-								<li><a href="#">이용약관</a></li>
-								<li><a href="#">개인정보 보호정책</a></li>
-							</ul>
-							<ul class="company">
-								<li>회사</li>
-								<li><a href="#">소개</a></li>
-								<li><a href="#">채용</a></li>
-								<li><a href="#">매장</a></li>
-								<li><a href="#">문의</a></li>
-							</ul>
-							<ul class="sns">
-								<li>뉴미디어</li>
-								<li><a href="#"><img src="../img/facebook.png" alt="페이스북 아이콘"></a></li>
-								<li><a href="https://www.instagram.com/oioikorea/" target="_blank" ><img src="../img/insta.png" alt="인스타그램 아이콘"></a></li>
-								<li><a href="#"><img src="../img/youtube.png" alt="유투브 아이콘"></a></li>
-								<li><a href="#"><img src="../img/twitter.png" alt="트위터 아이콘"></a></li>
-							</ul>
-						</div>
-						<div class="footer2">
-							<ul>
-								<li class="copy">ⓒ 2020 OiStudio</li>
-								<li class="address">
-									주)오아이스튜디오&nbsp;
-									대표자명:정예슬&nbsp; 
-									사업자 번호:191-81-00440&nbsp;
-									통신판매신고번호:서울금천 0915&nbsp;
-									주소:서울특별시 성동구 광나루로 130, 401호&nbsp;
-									<span>전화번호:070-7726-5252</span>
-								</li>
-							</ul>
-						</div>
-					</footer>
+					<div id="footer"></div>
 				</section>
 			</div>
 		</div>
@@ -163,6 +80,10 @@
 		.setTween(wipeAnimation)
 		// .addIndicators()
 		.addTo(controller);
+
+		document.getElementById("header").innerHTML='<object type="text/html" style="width: 100%;position: fixed;top: 0;left: 0;z-index: 2;" data="header.html"></object>';
+		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left;width: 100%;height:246px;padding-bottom:30px;box-sizing:border-box" data="footer.html"></object>';
+
     })
 
 
