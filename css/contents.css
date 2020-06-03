@@ -31,20 +31,10 @@ header h1 img{width:100%}
 .header_menu:after{content:'';display:block;clear:both}
 .logo{width:382px;display:inline-block;position:absolute;top:30px;left:50%;margin-left:-191px}
 .logo img{width:100%}
-<<<<<<< HEAD
-.header_open_menu{float:left;width:400px;margin-left:3%;}
-<<<<<<< HEAD
-.header_open_menu li{float:left;line-height:20px;font-size:.75em;}
-.header_open_menu li a{float:left;padding:17px 10px 18px 10px;}
-=======
-.header_open_menu li{float:left;line-height:20px;font-size:16px;}
-.header_open_menu li a{float:left;padding:17px 10px 18px 10px;font-weight:700;}
->>>>>>> 68f634ce74dfd969ee36796f70f76234657dc89d
-=======
+
 .header_open_menu{float:left;width:400px;margin-left:3%;margin-top:23px;}
 .header_open_menu li{float:left;line-height:20px;font-size:16px;}
 .header_open_menu li a{float:left;padding:17px 10px 18px 10px;font-weight:700;font-size:14px;}
->>>>>>> b845fff747e907761b8dd5adf91639d041df81ac
 .header_open_menu li a:hover{text-decoration:underline}
 .header_open_menu.menu_icon{float:right;margin-right:50px;margin-left:0;width:auto;}
 .header_open_menu.menu_icon li{float:left;margin-left:10px}
