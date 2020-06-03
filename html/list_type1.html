@@ -25,7 +25,9 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
-
+<style>
+#header{display:block;height:130px}
+</style>
 </head>
 
 <body>
@@ -45,36 +47,7 @@
 					<li><a href="#">악세서리</a></li>
 				</ul>	
 			</div>
-<style>
-#header{display:block;height:130px}
 
-#shop_category{width:100%;height:50px;margin-top:20px;font-size:12px}
-#shop_category ul{width:30%;height:40px;overflow:hidden;margin:0 auto}
-#shop_category ul>li{width:12%;height:30px;line-height:30px;float:left;cursor:pointer;text-align:center;font-weight:700;}
-#shop_category ul>li a:hover{text-decoration:underline}
-
-#product{width:100%;overflow:hidden;margin-bottom:5%}
-#product ul{}
-#product ul:after{content:'';display:block;clear:both;}
-#product .product_img img{width:100%;float:left}
-#product li{width:25%;float:left;box-sizing:border-box;position:relative;}
-#product li:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:solid 3px #fff;box-sizing:border-box;}
-
-#product li:nth-child(1){width:50%;float:left}
-#product li:nth-child(9n+1){width:50%;float:right}
-#product li:nth-child(18n+1){width:50%;float:left}
-
-.product_infor{position:absolute;top:0;left:0;width:100%;height:100%;transition:.4s;opacity:0;z-index:20;background-color:rgb(255,255,255,.3)}
-.product_infor a{display:table;width:100%;height:100%}
-#product li .icon{position:absolute;top:15px;right:15px;transition:.4s;opacity:0;z-index:21;}
-#product li .icon img{width:20px}
-.product_infor a .product_name{display:table-cell;vertical-align:middle;text-align:center}
-.product_infor a .product_name p + p{padding-top:5px;}
-#product li:hover .icon,
-#product li:hover .product_infor{opacity:1}
-.product_infor a:hover{text-decoration:none;}
-
-</style>
 			<div id="product">
 				<ul>
 					<li>
@@ -856,13 +829,6 @@
 				}
 			}
 		});
-
-
-		for(var i=1;$('#product ul li').length > i;i++){
-			$('#product ul li').eq(i-1).addClass("num"+i)
-		}
-
-		// $('#product ul li').eq(7).after('<div>asd</div>')
 
 		document.getElementById("header").innerHTML='<object type="text/html" style="width: 100%;height:130px;position: fixed;top: 0;left: 0;z-index: 2;" data="header.html"></object>';
 		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left;width: 100%;height:246px;padding-bottom:30px;box-sizing:border-box" data="footer.html"></object>';
