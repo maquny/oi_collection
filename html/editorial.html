@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, multiple, scroll, directions" />
-	<title>oi resort collection</title>
+	<title>에디토리얼</title>
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link href="../css/common.css" rel="stylesheet">
 	<link href="../css/normalize.css" rel="stylesheet">
@@ -25,6 +25,8 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <style>
 #header{display:block;height:130px}
 </style>
@@ -34,22 +36,52 @@
 	<div id="wrap">
 		<div id="header"></div>
 
-		<div class="container">
-			<div id="shop_category">
-				<ul>
-					<li><a href="#">전상품</a></li>
-					<li><a href="#">아웃웨어</a></li>
-					<li><a href="#">상의</a></li>
-					<li><a href="#">하의</a></li>
-					<li><a href="#">드레스</a></li>
-					<li><a href="#">가방</a></li>
-					<li><a href="#">모자</a></li>
-					<li><a href="#">악세서리</a></li>
-				</ul>	
+		<div id="editorial">
+			<div id="resort20_editorial">
+				<a href="#"><img src="../img/20resort_ed.jpg"></a>
 			</div>
 
-
+			<div id="drag">
+				<div id="draggable" class="ui-widget-content">
+  					<a href="#"><img src="../img/20ss.jpg"></a>
+				</div>
+ 				<div id="draggable2" class="ui-widget-content">
+  					<a href="#"><img src="../img/19w.jpg"></a>
+				</div>
+				<div id="draggable3" class="ui-widget-content">
+ 					<a href="#"><img src="../img/19f.jpg"></a>
+				</div>
+				<div id="draggable4" class="ui-widget-content">
+  					<a href="#"><img src="../img/18f.jpg"></a>
+				</div>
+ 				<div id="draggable5" class="ui-widget-content">
+  					<a href="#"><img src="../img/18s.jpg"></a>
+				</div>
+				<div id="draggable6" class="ui-widget-content">
+ 					<a href="#"><img src="../img/17r.jpg"></a>
+				</div>
+				<div id="draggable7" class="ui-widget-content">
+ 					<a href="#"><img src="../img/17ss.jpg"></a>
+				</div> 
+				<div id="draggable8" class="ui-widget-content">
+ 					<a href="#"><img src="../img/16ss.jpg"></a>
+				</div> 
+				
+				</div>
 		</div>
+		<script>
+ 		 $( function() {
+  		 $( "#draggable" ).draggable({ scroll: true });
+   		 $( "#draggable2" ).draggable({ scroll: true, scrollSensitivity: 100 });
+   		 $( "#draggable3" ).draggable({ scroll: true, scrollSpeed: 100 });
+   		 $( "#draggable4" ).draggable({ scroll: true, scrollSensitivity: 100 });
+   		 $( "#draggable5" ).draggable({ scroll: true, scrollSpeed: 100 });
+   		 $( "#draggable6" ).draggable({ scroll: true, scrollSensitivity: 100 });
+   		 $( "#draggable7" ).draggable({ scroll: true, scrollSpeed: 100 });
+   		 $( "#draggable8" ).draggable({ scroll: true, scrollSensitivity: 100 });
+   		
+ 		 } );
+		</script>
 
 		<div id="footer"></div>
 	</div>
