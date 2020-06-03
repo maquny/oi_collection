@@ -65,7 +65,7 @@ footer{padding-bottom:30px;}
 .footer ul h1{}
 .footer ul li{cursor:pointer;line-height:20px;}
 .footer ul li:first-child{font-size:15px;font-weight:600;padding-bottom:1%}
-.footer ul li a{color:#666;}
+.footer ul li a{color:#666;font-size:13px}
 .footer>ul>li a:hover{color:gray;transition:.3s}
 .footer .cx{width:15%;margin-left:10%}
 .footer .legal{width:15%;margin-left:5%}
