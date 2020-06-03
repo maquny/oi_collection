@@ -24,7 +24,7 @@ header h1{width:250px;margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
 
 /*  띠팝업  */
-.header_notice{width:100%;height:30px;color:#fff;background-color:#32cd32;font-size:10pt;z-index:2}
+.header_notice{width:100%;height:30px;color:#fff;background-color:#00cbae;font-size:10pt;z-index:2}
 .header_notice marquee{color:#02f;line-height:30px;scrolldelay:1000;z-index:2;margin:0;padding:0;}
 
 .header_menu{position:relative;height:100px;}
@@ -33,9 +33,14 @@ header h1 img{width:100%}
 .logo img{width:100%}
 
 .header_open_menu{float:left;width:400px;margin-left:3%;margin-top:23px;}
+<<<<<<< HEAD
 .header_open_menu li{float:left;line-height:20px;font-size:14px;}
 .header_open_menu li a{float:left;padding:17px 10px 18px 10px;font-size:12px;}
 
+=======
+.header_open_menu li{float:left;line-height:20px;font-size:16px;}
+.header_open_menu li a{float:left;padding:17px 10px 18px 10px;font-weight:700;font-size:14px;}
+>>>>>>> 0c0c51764b98f563b5336ef3bf8aa2240a5af640
 .header_open_menu li a:hover{text-decoration:underline}
 .header_open_menu.menu_icon{float:right;margin-right:50px;margin-left:0;width:auto;}
 .header_open_menu.menu_icon li{float:left;margin-left:10px}
