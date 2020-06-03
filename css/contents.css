@@ -81,8 +81,8 @@ footer{padding-bottom:30px;}
 .footer2 li.address{float:right;width:850px}
 
 /* 리스트 페이지 */
-#shop_category{width:100%;height:50px;margin-top:20px;font-size:12px}
-#shop_category ul{width:30%;height:40px;overflow:hidden;margin:0 auto}
+#shop_category{width:100%;margin:20px 0;font-size:12px}
+#shop_category ul{width:30%;overflow:hidden;margin:0 auto}
 #shop_category ul>li{width:12%;height:30px;line-height:30px;float:left;cursor:pointer;text-align:center;font-weight:700;}
 #shop_category ul>li a:hover{text-decoration:underline}
 
