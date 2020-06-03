@@ -119,14 +119,14 @@ footer{padding-bottom:30px;}
 #resort20_editorial { width:100%;  }
 #resort20_editorial img {width:100%; float:left; }
 #draggable, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7, #draggable8 { width: 150px; height: 200px; border:1px solid gray;}
-#draggable  {position:absolute;  top:200px; right:750px; }
-#draggable2 {position:absolute; top:150px; right:150px; }
-#draggable3 {position:absolute; top:500px; right:800px; }
-#draggable4 {position:absolute; top:250px; right:450px; }
-#draggable5 {position:absolute; top:500px; right:350px; }
-#draggable6 {position:absolute; top:850px; right:660px; }
-#draggable7 {position:absolute; top:750px; right:200px; }
-#draggable8 {position:absolute; top:950px; right:400px; }
+#draggable  {position:absolute; top:15%; right:35%; }
+#draggable2 {position:absolute; top:15%; right:8%; }
+#draggable3 {position:absolute; top:30%; right:25%; }
+#draggable4 {position:absolute; top:35%; right:30%; }
+#draggable5 {position:absolute; top:40%; right:15%; }
+#draggable6 {position:absolute; top:55%; right:25%; }
+#draggable7 {position:absolute; top:60%; right:10%; }
+#draggable8 {position:absolute; top:70%; right:30%; }
 #drag img {width:100%;}
 
 
