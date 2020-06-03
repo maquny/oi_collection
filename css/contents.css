@@ -120,7 +120,7 @@ footer{padding-bottom:30px;}
 #resort20_editorial img {width:100%; float:left; }
 #draggable, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7, #draggable8 { width: 150px; height: 200px; border:1px solid gray;}
 #draggable  {position:absolute; top:15%; right:35%; }
-#draggable2 {position:absolute; top:15%; right:8%; }
+#draggable2 {position:absolute; top:15%; right:8%;  }
 #draggable3 {position:absolute; top:30%; right:25%; }
 #draggable4 {position:absolute; top:35%; right:30%; }
 #draggable5 {position:absolute; top:40%; right:15%; }
@@ -129,8 +129,15 @@ footer{padding-bottom:30px;}
 #draggable8 {position:absolute; top:70%; right:30%; }
 #drag img {width:100%;}
 
-
-
+/* 협찬 */
+#press { width:100%;  margin:70px 0 100px 0;  }
+#press ul { width:100%;  margin:0 auto; margin-bottom:70px; overflow:hidden; box-sizing:border-box;}
+#press ul li { width:25%; border:3px solid red; float:left; overflow:hidden;  box-sizing:border-box; font-size:11px; font-weight:700; }
+#press ul li img {width:100%;}
+#press ul li a:hover {text-decoration:none;}
+#press ul li span { display:inline-block;  margin:15px 0 0 15px; }
+.press_thumb {width:100%; -webkit-transition:-webkit-transform .5s;	transition: transform .5s; }
+.press_thumb:hover {transform:scale(1.1, 1.1); }
 
 
 
