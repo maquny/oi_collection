@@ -72,11 +72,12 @@ footer{padding-bottom:30px;}
 .footer .legal{width:15%;margin-left:5%}
 .footer .company{width:15%;margin-left:8%;font-size:15px;}
 .footer .sns{width:15%; margin-left:10%; }
-.footer .sns li{width:16px; float:left; padding-right:7%; overflow:hidden;}
+.footer .sns li{width:16px; float:left; padding-right:5%; overflow:hidden;}
 .footer .sns li:first-child{width:100%;}
 .footer .sns li a {opacity:60%;   }
 .footer .sns li a:hover {opacity:100%;}
 .footer .sns img{width:100%;}
+.footer ul li:nth-child(6) {width:5px; }
 .footer2{width:80%;margin:0 auto; overflow:hidden; }
 .footer2 li{line-height:15px; float:left; font-size:12px; color:#666; }
 .footer2 li.copy{width:10%;}
