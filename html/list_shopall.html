@@ -952,6 +952,30 @@
 			</div>
 
 		</div>
+<!-----------------카카오상담 버튼 ------------------->
+<div id="kakao"><a href="https://accounts.kakao.com/"><img src="../img/kakao.png" target="_blank" ></a></div>
+<!-----------------top 버튼 ------------------->			
+<div id="topButton" style="cursor: pointer"><img src="../img/topbutton.png" id="topButtonImg" ></div>
+	
+<script>
+$(document).ready(function() {
+
+	$(window).scroll(function() {
+	    // top button controll
+	    if ($(this).scrollTop() > 500) {
+	        $('#topButton').fadeIn();
+	    } else {
+	        $('#topButton').fadeOut();
+	    }
+	});
+
+	$("#topButtonImg").click(function() {
+		$('html, body').animate({scrollTop:0}, '200');
+	});
+
+});
+</script><!-----------------top 버튼 ------------------->	
+
 
 		<div id="footer"></div>
 	</div>

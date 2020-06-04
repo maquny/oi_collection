@@ -82,6 +82,14 @@ footer{padding-bottom:30px;}
 .footer2 li.copy{width:10%;}
 .footer2 li.address{float:right; width:850px;}
 
+/* top버튼  */
+#topButton {position: fixed; right:1%; bottom: 50px; display: none; z-index: 999; width:20px; }
+#topButton img {width:100%; }
+/* kakao 상담버튼  */
+#kakao {width:50px; position:fixed; bottom:150px; right:10px; z-index: 999; }
+#kakao img {width:100%; }
+
+
 /* 쇼핑하기 - 신상품 */
 #shop_new{width:100%; height:20px; line-height:20px;  margin:20px 0; font-size:12px; }
 #shop_new ul{width:100px; box-sizing:border-box; overflow:hidden; margin:0 auto;}
@@ -142,21 +150,28 @@ footer{padding-bottom:30px;}
 
 /* 로그인 */
 #login_bg {background-color:#f9f8f8; width:100% margin-top:-100px;}
-#login_page { width:305px; height:880px; padding-top:100px; margin:0 auto;}
+#login_page { width:307px; height:880px; padding-top:100px; margin:0 auto;}
+.idpw { overflow:hidden; }
 .idpw input { border:1px solid #ccc; width:300px; height:30px; margin-top:-10px; }
-.idpw_search { float:right; padding-top:5px;}
+.idpw_search { float:right; padding-top:5px; padding-bottom:20px;}
+.joinlogin { width:305px;  }
+.joinlogin ul {overflow:hidden;} 
+.joinlogin ul li {width:148px; height:30px; line-height:30px; text-align:center;  float:left; border:1px solid #333;}
+.joinlogin ul li:nth-child(1) { margin-right:4px; }
+.joinlogin ul li:nth-child(1) a:hover { background:#000;  color:#fff; }
+.joinlogin ul li:nth-child(2) { background:#000;  }
+.joinlogin ul li:nth-child(2) a { color:#fff; }
+
 
 .email_login { margin-top:80px; }
 .email_login h3 {font-size:12px; font-weight:600;}
 .email_login ul li {width:305px; height:30px; line-height:30px; text-align:center; margin:5px 0 5px 0; text-decoration:none;}
-
 .naver_login {background-color:#1cc701;}
 .naver_login a {color:#fff; text-decoration:none;}
 .naver_login a:hover { color:#fff; font-weight:600; transition:.2s;}
 .kakao_login {background-color:#f9e13f;}
 .kakao_login a {text-decoration:none; }
 .kakao_login a:hover {color:#333; font-weight:600; transition:.2s;}
-
 
 
 
