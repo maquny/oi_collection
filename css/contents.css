@@ -132,12 +132,12 @@ footer{padding-bottom:30px;}
 /* 협찬 */
 #press { width:100%;  margin:70px 0 100px 0;  }
 #press ul { width:100%;  margin:0 auto; margin-bottom:70px; overflow:hidden; box-sizing:border-box;}
-#press ul li { width:25%; border:3px solid red; float:left; overflow:hidden;  box-sizing:border-box; font-size:11px; font-weight:700; }
+#press ul li { width:25%; border:3px solid white; float:left; overflow:hidden;  box-sizing:border-box; font-size:11px; font-weight:700; }
 #press ul li img {width:100%;}
 #press ul li a:hover {text-decoration:none;}
 #press ul li span { display:inline-block;  margin:15px 0 0 15px; }
-.press_thumb {width:100%; -webkit-transition:-webkit-transform .5s;	transition: transform .5s; }
-.press_thumb:hover {transform:scale(1.1, 1.1); }
+
+
 
 
 
