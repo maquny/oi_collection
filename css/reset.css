@@ -14,18 +14,17 @@ body, html {
 h1, h2, h3, h4 {
 }
 h1 {
-	font-style: italic;
-	font-weight: bold;
-	font-size: 40px;
+	font-weight:bold;
+	font-size: 30px;
 }
 h2 {
 	font-size: 20px;
 }
-a, a:visited {
+a, a:visited { font-size:12px; 
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+	color:#ccc; transition:0.3s;
 }
 .touchonly {
 	display: none;

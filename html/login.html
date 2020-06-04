@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, multiple, scroll, directions" />
+	<title>로그인</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link href="../css/common.css" rel="stylesheet">
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/ScrollMagic.css" type="text/css">
+
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<!-- <script type="text/javascript" src="../../assets/js/lib/jquery.min.js"></script> -->
+	<script type="text/javascript" src="../assets/js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="../assets/js/examples.js"></script>
+	
+	<script type="text/javascript" src="../assets/js/lib/gsap3/gsap.min.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	<script type="text/javascript" src="../js/funyalert.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+
+<style>
+#header{display:block;height:130px}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header"></div>
+
+		<div id="login_bg">
+			<div id="login_page">
+			<div class="idpw">
+				<h1>로그인</h1>
+					<input type="text" alt="로그인" class="login"></input>
+				<h1>비밀번호</h1>
+					<input type="text" alt="비밀번호" class="password"></input>
+				<p class="idpw_search"><a href="#">아이디 / 비밀번호 찾기</a></p>
+			</div> <!--idpw 아이디 패스워드 -->
+
+			<div class="email_login">
+				<h3>다음으로 로그인하기</h3>
+					<ul>
+						<li class="naver_login"><a href="#">네이버계정으로 로그인</a></li>
+						<li class="kakao_login"><a href="#">카카오계정으로 로그인</a></li>
+					</ul>
+			</div><!-- email_login -->
+		</div><!--login_bg-->
+		</div><!--login_page-->
+	
+		<div id="footer"></div>
+	</div>
+
+
+<script>
+	$(document).ready(function(){
+		$('.header_open_menu li.list').hover(function(){
+			var target = $(this);
+			var childUl = $(this).children('ul')
+			if(childUl.length > 0){
+				if($(this).hasClass('open')){
+					target.removeClass('open');
+					// console.log(target)
+				} else {
+					$(this).addClass('open');
+				}
+			}
+		});
+
+		document.getElementById("header").innerHTML='<object type="text/html" style="width:100%; height:130px; background-color:#f9f8f8; position:fixed; top:0; left:0; z-index:31;" data="header.html"></object>';
+		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left; width: 100%; height:270px; padding-bottom:30px; box-sizing:border-box;" data="footer.html"></object>';
+    })
+
+</script>
+</body>
+</html>
