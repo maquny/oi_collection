@@ -62,7 +62,7 @@ header h1 img{width:100%}
 .main4{background-image:url(../img/main4.jpg);background-size:cover;background-attachment:fixed}
 
 footer{padding-bottom:30px;}
-.footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #ccc}
+.footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #ccc;}
 .footer ul{float:left;margin:2% 0 0 10%;line-height:25px}
 .footer ul h1{}
 .footer ul li{cursor:pointer;line-height:20px;}
@@ -84,9 +84,9 @@ footer{padding-bottom:30px;}
 .footer2 li.address{float:right; width:850px;}
 
 /* 쇼핑하기 - 신상품 */
-#shop_new{width:100%; margin:20px 0; font-size:12px; }
+#shop_new{width:100%; height:20px; line-height:20px;  margin:20px 0; font-size:12px; }
 #shop_new ul{width:100px; box-sizing:border-box; overflow:hidden; margin:0 auto;}
-#shop_new ul>li{width:100px; height:30px; line-height:30px; text-align:center;   }
+#shop_new ul>li{width:100px; text-align:center; }
 
 #product{width:100%; overflow:hidden; margin-bottom:5%}
 #product ul:after{content:'';display:block;clear:both;}
@@ -107,12 +107,12 @@ footer{padding-bottom:30px;}
 #product .product_infor a:hover{text-decoration:none;}
 
 /* 쇼핑하기 - 전상품 카테고리 */
-#shop_category{width:100%;margin:20px 0;font-size:12px}
-#shop_category ul{width:515px; box-sizing:border-box;   overflow:hidden; margin:0 auto; border:1px solid red;}
-#shop_category ul>li{width:55px; height:30px; line-height:30px; float:left; cursor:pointer; text-align:center;}
-#shop_category ul>li a:hover{text-decoration:underline}
-#shop_category ul li:first-child { margin-right:10px;  }
-#shop_category ul li:nth-child(7) { margin-right:6px;  }
+#shop_all {width:100%;height:20px; line-height:20px;  margin:20px 0; font-size:12px;}
+#shop_all ul{width:515px; box-sizing:border-box; overflow:hidden; margin:0 auto;}
+#shop_all ul>li{width:55px; float:left; cursor:pointer; text-align:center; box-sizing:border-box;}
+#shop_all ul>li a:hover{text-decoration:underline;}
+#shop_all ul li:first-child { margin-right:10px;  }
+
 
 /* 에디토리얼 */ 
 #editorial {width:50%;  margin-top:-100px;  }
@@ -142,7 +142,7 @@ footer{padding-bottom:30px;}
 .num_page ul span {color:#999;}
 
 /* 로그인 */
-#login_page { width:20%; margin:0 auto; border:1px solid red;  }
+#login_page { width:305px; margin:30px auto; border:1px solid red;  box-sizing:border-box; }
 .idpw input { border:1px solid #ccc; width:300px; height:30px;  }
 
 
