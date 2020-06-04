@@ -22,6 +22,7 @@
 header{width:100%;position:fixed;top:0;left:0;z-index:2}
 header h1{width:250px;margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
+.logo:hover { opacity:0.3; }
 
 /*  띠팝업  */
 .header_notice{width:100%;height:30px;background-color:#64c063;font-size:10pt;z-index:31; overflow:hidden; }
@@ -32,11 +33,10 @@ header h1 img{width:100%}
 .logo{width:300px;display:inline-block;position:absolute;top:30px;left:50%;margin-left:-150px}
 .logo img{width:100%}
 
-.header_open_menu{float:left;width:400px;margin-left:3%;margin-top:23px;}
+.header_open_menu{float:left;width:400px; margin-left:3%; margin-top:23px;}
 
 .header_open_menu li{float:left;line-height:20px;font-size:12px;}
 .header_open_menu li a{float:left;padding:17px 10px 18px 10px;}
-.header_open_menu li a:hover{text-decoration:underline}
 .header_open_menu.menu_icon{float:right;margin-right:50px;margin-left:0;width:auto;}
 .header_open_menu.menu_icon li{float:left;margin-left:10px}
 .header_open_menu.menu_icon li:first-child{margin-left:0}
@@ -64,17 +64,16 @@ header h1 img{width:100%}
 footer{padding-bottom:30px;}
 .footer{width:100%;height:200px;margin:0 auto;overflow:hidden;border-top:1px solid #ccc;}
 .footer ul{float:left;margin:2% 0 0 10%;line-height:25px}
-.footer ul h1{}
-.footer ul li{cursor:pointer;line-height:20px;}
+.footer ul li{cursor:pointer; line-height:20px;}
 .footer ul li:first-child{font-size:14px;font-weight:600;padding-bottom:1%}
-.footer ul li a{color:#666;font-size:12px}
-.footer>ul>li a:hover{color:gray;transition:.3s}
+.footer ul li a {color:#666;font-size:12px}
+.footer ul li a:hover {color:#ccc; }
 .footer .cx{width:15%;margin-left:10%}
 .footer .legal{width:15%;margin-left:5%}
 .footer .company{width:15%;margin-left:8%;font-size:15px;}
 .footer .sns{width:15%; margin-left:10%; }
 .footer .sns li{width:16px; float:left; padding-right:7%; overflow:hidden;}
-.footer ul.sns li:first-child{width:100%;}
+.footer .sns li:first-child{width:100%;}
 .footer .sns li a {opacity:60%;   }
 .footer .sns li a:hover {opacity:100%;}
 .footer .sns img{width:100%;}
@@ -111,7 +110,6 @@ footer{padding-bottom:30px;}
 #shop_all {width:100%;height:20px; line-height:20px;  margin:20px 0; font-size:12px;}
 #shop_all ul{width:515px; box-sizing:border-box; overflow:hidden; margin:0 auto;}
 #shop_all ul>li{width:55px; float:left; cursor:pointer; text-align:center; box-sizing:border-box;}
-#shop_all ul>li a:hover{text-decoration:underline;}
 #shop_all ul li:first-child { margin-right:10px;  }
 
 
@@ -143,8 +141,21 @@ footer{padding-bottom:30px;}
 .num_page ul span {color:#999;}
 
 /* 로그인 */
-#login_page { width:305px; margin:30px auto; border:1px solid red;  box-sizing:border-box; }
-.idpw input { border:1px solid #ccc; width:300px; height:30px;  }
+#login_bg {background-color:#f9f8f8; width:100% margin-top:-100px;}
+#login_page { width:305px; height:880px; padding-top:100px; margin:0 auto;}
+.idpw input { border:1px solid #ccc; width:300px; height:30px; margin-top:-10px; }
+.idpw_search { float:right; padding-top:5px;}
+
+.email_login { margin-top:80px; }
+.email_login h3 {font-size:12px; font-weight:600;}
+.email_login ul li {width:305px; height:30px; line-height:30px; text-align:center; margin:5px 0 5px 0; text-decoration:none;}
+
+.naver_login {background-color:#1cc701;}
+.naver_login a {color:#fff; text-decoration:none;}
+.naver_login a:hover { color:#fff; font-weight:600; transition:.2s;}
+.kakao_login {background-color:#f9e13f;}
+.kakao_login a {text-decoration:none; }
+.kakao_login a:hover {color:#333; font-weight:600; transition:.2s;}
 
 
 
