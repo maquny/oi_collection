@@ -35,7 +35,7 @@
 	<div id="wrap">
 		<div id="header"></div>
 
-		<div id="login_bg">
+		<div id="login">
 			<div id="login_page">
 			<div class="idpw">
 				<h1>로그인</h1>
@@ -45,17 +45,15 @@
 				<p class="idpw_search"><a href="#">아이디 / 비밀번호 찾기</a></p><br><br>
 			</div> <!--idpw 아이디 패스워드 -->
 			<div class="joinlogin">
-				<ul>
-					<li class="join"><a href="#">회원가입</a></li>
-					<li class="login"><a href="#">로그인</a></li>
-				</ul>
+					<button class="join_btn">회원가입</button>
+					<button class="join_btn">로그인</button>
 			</div><!--joinlogin-->
 
 			<div class="email_login">
 				<h3>다음으로 로그인하기</h3>
 					<ul>
-						<li class="naver_login"><a href="#">네이버계정으로 로그인</a></li>
-						<li class="kakao_login"><a href="#">카카오계정으로 로그인</a></li>
+						<a href="#"><li class="naver_login">네이버계정으로 로그인</li></a>
+						<a href="#"><li class="kakao_login">카카오계정으로 로그인</li></a>
 					</ul>
 			</div><!-- email_login -->
 		</div><!--login_bg-->
@@ -80,7 +78,7 @@
 			}
 		});
 
-		document.getElementById("header").innerHTML='<object type="text/html" style="width:100%; height:130px; background-color:#f9f8f8; position:fixed; top:0; left:0; z-index:31;" data="header.html"></object>';
+		document.getElementById("header").innerHTML='<object type="text/html" style="width:100%; height:130px; position:fixed; top:0; left:0; z-index:31;" data="header.html"></object>';
 		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left; width: 100%; height:270px; padding-bottom:30px; box-sizing:border-box;" data="footer.html"></object>';
     })
 

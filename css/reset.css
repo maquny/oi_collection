@@ -67,3 +67,6 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+textarea:focus {outline: none;}
+button:focus {outline: none;}
+input:focus {outline: none;}
