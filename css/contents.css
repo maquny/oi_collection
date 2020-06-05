@@ -168,9 +168,18 @@ footer{padding-bottom:30px;}
 .kakao_login {background-color:#f9e13f;}
 
 /* 회원가입 */
+#join {width:310px; padding-bottom:100px; margin:0px auto; margin-top:50px;  }
+#join h1 {  margin-bottom:5px; }
+#join input {height:30px;  border:1px solid #ccc; font-size:12px; margin:10px 0 10px 0; }
+#join select {height:34px;  border:1px solid #ccc; font-size:12px; margin:10px 0 10px 0;}
+input::-ms-input-placeholder {color:#ccc; }
+input::-webkit-input-placeholder {color:#ccc; }
+input::-moz-input-placeholder {color:#ccc; }
+#join label { font-size:12px; line-height:30px; border:1px solid red; overflow:hidden;  }
+#join span {font-size:12px; margin-left:5px; }
 
 
-
+.class {width:100px; }
 /* 아이디 비밀번호 찾기 */
 
 
