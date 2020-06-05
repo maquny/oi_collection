@@ -177,7 +177,7 @@ input::-webkit-input-placeholder {color:#ccc; }
 input::-moz-input-placeholder {color:#ccc; }
 #join label { font-size:12px; line-height:30px; border:1px solid red; overflow:hidden;  }
 #join span {font-size:12px; margin-left:5px; }
-
+.add { border:1px solid #ccc; }
 
 .class {width:100px; }
 /* 아이디 비밀번호 찾기 */
