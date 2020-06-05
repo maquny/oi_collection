@@ -126,15 +126,17 @@ footer{padding-bottom:30px;}
 #editorial {width:50%;  margin-top:-100px;  }
 #resort20_editorial { width:100%;  }
 #resort20_editorial img {width:100%; float:left; }
-#draggable, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7, #draggable8 { width: 150px; height: 200px; border:1px solid gray;}
-#draggable  {position:absolute; top:15%; right:35%; }
+
+.draggable div{width:7%;}
+.type1  {position:absolute; top:15%; right:35%; }
+#draggable1 {position:absolute; top:13%; right:35%;  }
 #draggable2 {position:absolute; top:15%; right:8%;  }
-#draggable3 {position:absolute; top:30%; right:25%; }
-#draggable4 {position:absolute; top:35%; right:30%; }
-#draggable5 {position:absolute; top:40%; right:15%; }
-#draggable6 {position:absolute; top:55%; right:25%; }
-#draggable7 {position:absolute; top:60%; right:10%; }
-#draggable8 {position:absolute; top:70%; right:30%; }
+#draggable3 {position:absolute; top:20%; right:25%; }
+#draggable4 {position:absolute; top:30%; right:30%; }
+#draggable5 {position:absolute; top:30%; right:12%; }
+#draggable6 {position:absolute; top:45%; right:25%; }
+#draggable7 {position:absolute; top:50%; right:10%; }
+#draggable8 {position:absolute; top:60%; right:30%; }
 #drag img {width:100%;}
 
 /* 협찬 */
@@ -157,7 +159,6 @@ footer{padding-bottom:30px;}
 .idpw_search { float:right; padding-top:5px; padding-bottom:20px;}
 .joinlogin { width:304px;overflow:hidden;  }
 .join_btn {border:1px solid #333; font-size:12px; width:148px; height:30px; background:#fff; }
-
 .join_btn:nth-child(2) {background:#000; color:#fff;}
 .join_btn:nth-child(1):hover {background:#000; color:#fff; transition:0.3s;}
 .email_login { margin-top:80px; }
@@ -166,7 +167,11 @@ footer{padding-bottom:30px;}
 .naver_login {background-color:#1cc701;}
 .kakao_login {background-color:#f9e13f;}
 
+/* 회원가입 */
 
+
+
+/* 아이디 비밀번호 찾기 */
 
 
 
