@@ -219,12 +219,14 @@ span.flagship {font-weight:700; color:#fff; font-size:16px; }
 .naverpay img {width:100%;}
 /*상세페이지 -관련상품 */
 
-#wishlist {width:100%; padding:100px 0 100px 0;  border:1px solid red; }
+#wishlist {width:100%; padding:100px 0 100px 0; }
 #wishlist h4 { font-size:14px; font-weight:600;text-align:center; margin-bottom:20px;  }
 .wish { margin:0 auto;  }
 .wish ul {overflow:hidden; width:450px; margin:0 auto; }
-.wish ul li { width:200px; float:left; margin-left:10px;  }
+.wish ul li { width:200px; float:left; margin-left:10px;text-align:center;   }
+.wish ul li a:hover { color:#333; cursor:pointer; }
 .wish ul li img {width:100%; }
+
 
 
 
