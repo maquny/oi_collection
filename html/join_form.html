@@ -37,12 +37,12 @@
 
 		<div id="container">
 		<div id="join">
-			<form method="post" >	
+			
 				<h1>회원가입</h1>
 				<input type="text" name="id" size="50" placeholder="아이디* (영문소문자/숫자,4~6자)"></br>
 				<input type="password" name="pw"  size="50"placeholder="비밀번호* (영문소문자/숫자,4~6자)"></br>
 				<input type="password" name="pw2" size="50" placeholder="비밀번호 확인"></br>
-				<select name="pw_question" >
+				<select name="pw_question" style="width:311px;">
 					<option>기억에 남는 추억의 장소는?</option>
 					<option>다시 태어나고 싶은 것은?</option>
 					<option>가장 좋아하는 음식은?</option>
@@ -51,7 +51,7 @@
 					<option>가장 좋아하는 음식은?</option>
 				</seclect>
 				<input type="text" name="pw_confirm" size="50" placeholder="비밀번호 확인 답변*"></br>
-				<select name="phone1"   >
+				<select name="phone1" style="width:80px;">
 					<option>010</option>
 					<option>011</option>
 					<option>017</option>
@@ -61,7 +61,8 @@
 			 		<span class="hyphen phone"> - </span>
 			 	<input type="text" name="phone3"  size="15" ></br>
 				<input type="text" name="name"  size="50" placeholder="이름*"></br>
-				<input type="text" name="address" size="30" placeholder="주소*"></br>				
+				<input type="text" name="address" size="30" placeholder="주소*">
+				<button class="address_btn">우편번호</button>			
 				<input type="text" name="address" size="50" placeholder="기본주소"></br>
 				<input type="text" name="address2" size="50" placeholder="나머지주소 (선택입력가능)"></br>
 				<input type="text" name="email" size="50" placeholder="이메일*"></br>
@@ -70,7 +71,7 @@
 				<input type="text" name="yy" class="date" size="12"><span>년</span>
 				<input type="text" name="mm" class="date" size="12"><span>월</span>
 				<input type="text" name="d" class="date" size="12"><span>일</span>
-			</form>
+			
 		</div><!-- join -->
 		</div><!-- container -->
 		<div id="footer"></div>
