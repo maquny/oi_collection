@@ -180,7 +180,6 @@ input::-moz-input-placeholder {color:#ccc; }
 .address_btn { width:113px;height:33px; line-height:33px; padding-top:-10px; border:1px solid #000;font-size:12px;  background:#000; color:#fff;  }
 
 
-
 /* 회사소개 */
 #company {width:100%;height:100vh; background:#000; line-height:50px;}
 .company_profile {font-size:12px; color:#fff; text-align:center; padding-top:20%; }
@@ -191,4 +190,41 @@ input::-moz-input-placeholder {color:#ccc; }
 .swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
 .ad_text { position:absolute; bottom:100px; right:150px; color:#fff; z-index:100; line-height:30px; font-size:12px;  }
 span.flagship {font-weight:700; color:#fff; font-size:16px; }
+
+/* 상세페이지 */
+#detail_page { width:100%; margin:-100px 0 100px 0; overflow:hidden;  }
+.product_img {width:50%; float:left; }
+.product_img img {width:100%; }
+
+.product_info {width:45%;  height:500px; position:fixed; top:200px; right:0;}
+.colorchip li { width:15px; height:15px;  float:left; margin-right:5px;  }
+.colorchip li:nth-child(1) { background:green;}
+.colorchip li:nth-child(2) { background:black;  }
+.name {width:100%; margin:15px 0 30px 0; line-height:25px; display:inline-block; }
+.price { font-size:12px; color:#666; }
+.name ul { overflow:hidden;}
+.name ul li { width:30px; height:30px; text-align:center; line-height:30px;  border:1px solid #ccc; float:left; margin:15px 5px 0 0;    }
+#tabs {width:100%;  }
+#tabs .box {width:100%; overflow:hidden; } 
+#tabs p {font-size:12px; line-height:20px; padding-top:5px; }
+.info_title { width:100px; height:30px; line-height:30px; font-weight:700; float:left; }
+.info_title:nth-child(1) {width:75px;  }
+.buy { margin-top:50px;  }
+.buy ul {overflow:hidden; }
+.buy ul li {float:left; width:150px; height:30px; line-height:30px; text-align:center; border:1px solid black; margin-right:5px;  }
+.buy ul li:hover { text-decoration:none;  }
+.buy ul li:first-child { background:#000; }
+.buy ul li:first-child a {color:#fff; }
+.naverpay {width:300px; margin-top:10px ; }
+.naverpay img {width:100%;}
+/*상세페이지 -관련상품 */
+
+#wishlist {width:100%; padding:100px 0 100px 0;  border:1px solid red; }
+#wishlist h4 { font-size:14px; font-weight:600;text-align:center; margin-bottom:20px;  }
+.wish { margin:0 auto;  }
+.wish ul {overflow:hidden; width:450px; margin:0 auto; }
+.wish ul li { width:200px; float:left; margin-left:10px;  }
+.wish ul li img {width:100%; }
+
+
 

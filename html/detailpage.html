@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, multiple, scroll, directions" />
+	<title>상세페이지</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link href="../css/common.css" rel="stylesheet">
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/ScrollMagic.css" type="text/css">
+	<link rel="stylesheet" href="../css/swiper.css" type="text/css">
+	
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<!-- <script type="text/javascript" src="../../assets/js/lib/jquery.min.js"></script> -->
+	<script type="text/javascript" src="../assets/js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="../assets/js/examples.js"></script>
+	
+	<script type="text/javascript" src="../assets/js/lib/gsap3/gsap.min.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	<script type="text/javascript" src="../js/funyalert.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+
+	<!--상페 설명 스크립트 -->
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+
+<style>
+#header{display:block;height:130px}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header"></div>
+
+		<div id="container">
+			<div id="detail_page">
+				<div class="product_img">
+					<ul>
+						<li><img src="../img/img1.jpg"></li>
+						<li><img src="../img/img2.jpg"></li>
+						<li><img src="../img/img3.jpg"></li>
+						<li><img src="../img/img4.jpg"></li>
+						<li><img src="../img/img5.jpg"></li>
+						<li><img src="../img/img6.jpg"></li>
+						<li><img src="../img/img7.jpg"></li>
+					</ul>
+				</div><!--product_img-->
+				<div class="product_info">
+					<div class="colorchip">
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div><!--colorchip-->
+					<div class="name">
+						<p>RIBBON SLIP ONEPIECE_RED</p>
+						<p class="price">102,000</p>
+						<ul>
+							<li><a href="#">S</a></li>
+							<li><a href="#">M</a></li>
+						</ul>
+					</div><!--name-->
+					<div id="tabs">
+  						<ul class="box">
+  						  <li class="info_title"><a href="#tabs-1">상품설명	</a></li>
+ 					      <li class="info_title"><a href="#tabs-2">사이즈 가이드</a></li>
+   						  <li class="info_title"><a href="#tabs-3">세탁정보</a></li>
+  						</ul>
+							  <div id="tabs-1">
+							    <p>O!Oi collection 20 S/S COLLECTION의 RIBBON SLIP ONEPIECE 입니다.<br>
+							    	 롱한 기장감의 슬립 원피스 제품 입니다.<br>
+							    	  어깨끈은 탈부착 되지 않으며, 리본으로 묶어 연출할수 있습니다. <br>
+							    	어깨끈 부분에 조리개를 넣어, 체형에 따라 조절하여 착용이 가능합니다.<br>
+							    	 후면부에는 컷팅 디테일을 넣어 포인트를 주었으며, 
+							    	 O!Oi 시그니처 로고를 자수로 밀도 높게 새겨 넣어 디테일을 살렸습니다.<br> 
+							    	옆지퍼로 편하게 착용이 가능합니다. </p>
+							  </div>
+							  <div id="tabs-2">
+							    <p>
+							    	사이즈&nbsp;&nbsp; S 모델착용 / M<br>
+									가슴단면&nbsp;&nbsp;48.5			<br>
+									밑단단면&nbsp;&nbsp;84				<br>
+									어깨끈단면(앞)&nbsp;&nbsp;11		<br>
+									총장 &nbsp;&nbsp;100				<br>
+									소재 	&nbsp;&nbsp;폴리에스터 100%	<br><br>
+									모델사이즈							<br>
+									키&nbsp;&nbsp;173				<br>
+									가슴&nbsp;&nbsp;81				<br>
+									허리&nbsp;&nbsp;62				<br>
+									엉덩이&nbsp;&nbsp;88				<br>
+							    </p>
+							  </div>
+							  <div id="tabs-3">
+							    <p>	세탁&nbsp;&nbsp;드라이<br>
+								  	안감&nbsp;&nbsp;없음<br>
+									두께&nbsp;&nbsp;보통<br>
+									비침&nbsp;&nbsp;보통<br>
+									텐션&nbsp;&nbsp;없음<br><br>
+									세탁 시 제품 내부의 케어라벨을 꼭 확인해주시기 바랍니다.</p>
+							  </div>
+							</div>
+							  <script>
+							  $( function() {
+							    $( "#tabs" ).tabs();
+							  } );
+							  </script>
+
+							  <div class="buy">
+							  	<ul>
+							  		<li><a href="#">구매하기</a></li>
+							  		<li><a href="#">장바구니</a></li>
+							  		<li><a href="#">관심상품</a></li>
+							  	</ul>
+							  </div><!--buy -->
+							  <div class="naverpay">
+							  	<img src="../img/naverpay.png">
+							  </div><!--naverpay -->
+								</div><!--product_info-->
+							 </div><!--detail_page-->
+
+
+				<div id="wishlist">
+					<div class="wish">
+						<h4>관련 상품</h4>
+						<ul>
+							<li><a href="#"><img src="../img/wish.jpg"></a></li>
+							<li><a href="#"><img src="../img/wish2.jpg"></a></li>
+						</ul>
+					</div><!-- wish-->
+				</div><!--wishlist -->
+	</div><!--container-->
+
+		<!-----------------카카오상담 버튼 ------------------->
+			<div id="kakao"><a href="https://accounts.kakao.com/">
+			<img src="../img/kakao.png" target="_blank" ></a></div>
+		<!-----------------top 버튼 ------------------->			
+			<div id="topButton" style="cursor: pointer"><img src="../img/topbutton.png" id="topButtonImg" ></div>
+								
+					<script>
+						$(document).ready(function() {
+							$(window).scroll(function() {
+								    // top button controll
+								    if ($(this).scrollTop() > 500) {
+								        $('#topButton').fadeIn();
+								    } else {
+								        $('#topButton').fadeOut();
+								    }
+								});
+
+								$("#topButtonImg").click(function() {
+									$('html, body').animate({scrollTop:0}, '200');
+								});
+
+							});
+					</script><!-----------------top 버튼 ------------------->	
+
+
+
+
+		<div id="footer"></div>
+	</div><!-- wrap -->
+	
+
+
+<script>
+	$(document).ready(function(){
+		$('.header_open_menu li.list').hover(function(){
+			var target = $(this);
+			var childUl = $(this).children('ul')
+			if(childUl.length > 0){
+				if($(this).hasClass('open')){
+					target.removeClass('open');
+					// console.log(target)
+				} else {
+					$(this).addClass('open');
+				}
+			}
+		});
+
+		document.getElementById("header").innerHTML='<object type="text/html" style="width:100%; height:130px; position:fixed; top:0; left:0; z-index:31;" data="header.html"></object>';
+		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left; width: 100%; height:270px; padding-bottom:30px; box-sizing:border-box;" data="footer.html"></object>';
+    })
+
+</script>
+</body>
+</html>
