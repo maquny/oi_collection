@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, multiple, scroll, directions" />
+	<title>회새소개</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link href="../css/common.css" rel="stylesheet">
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/ScrollMagic.css" type="text/css">
+
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<!-- <script type="text/javascript" src="../../assets/js/lib/jquery.min.js"></script> -->
+	<script type="text/javascript" src="../assets/js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="../assets/js/examples.js"></script>
+	
+	<script type="text/javascript" src="../assets/js/lib/gsap3/gsap.min.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	<script type="text/javascript" src="../js/funyalert.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+
+<style>
+#header{display:block;height:130px}
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header"></div>
+
+		<div id="container">
+			<div id="company">
+				<p class="company_profile">
+					O!Oi는 2011년 디자이너 정예슬이 런칭한 브랜드입니다.<br>
+					키치하면서 유니크한 컬렉션들을 전개해 왔으며, 2016년 유니섹스 세컨드 라인 5252 BY O!Oi가 
+					런칭되면서 퍼스트 라인인 O!Oi COLLECTION으로 새롭게 네이밍 되었습니다.<br>
+					이후부터는 기존의 무드에 귀엽고 사랑스러운 디자인을 더해 로맨틱하고 러블리한 컬렉션을 다양한 주제와 스토리를 통해 선보이고 있습니다.<br>
+					런칭부터 지금까지 매 시즌 새로운 컬렉션을 선보이고 있는, O!Oi의 히스토리를 모두 담고 있는 브랜드입니다.
+				</p>
+			</div><!--company-->
+		</div><!--container-->
+		<div id="footer"></div>
+	</div>
+
+
+<script>
+	$(document).ready(function(){
+		$('.header_open_menu li.list').hover(function(){
+			var target = $(this);
+			var childUl = $(this).children('ul')
+			if(childUl.length > 0){
+				if($(this).hasClass('open')){
+					target.removeClass('open');
+					// console.log(target)
+				} else {
+					$(this).addClass('open');
+				}
+			}
+		});
+
+		document.getElementById("header").innerHTML='<object type="text/html" style="width:100%; height:130px; background:#fff;  position:fixed; top:0; left:0; z-index:31;" data="header.html"></object>';
+		document.getElementById("footer").innerHTML='<object type="text/html" style="float:left; width: 100%; height:270px; padding-bottom:30px; box-sizing:border-box;" data="footer.html"></object>';
+    })
+
+</script>
+</body>
+</html>
