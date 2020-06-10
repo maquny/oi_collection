@@ -244,10 +244,21 @@ input::-moz-input-placeholder {color:#ccc; }
 .wish ul li img {width:100%; }
 
 
-.hash_tag { width:100%;  height:600px; border:1px solid red; }
-.hash_tag .tag {width:35%; overflow:hidden;  line-height:60px;  border:1px solid blue; }
-.hash_tag .tag li { border:1px solid yellow; padding-right:10px; float:left; text-align:center;}
-.hash_tag .tag li a { font-size:35px; font-weight:700;  text-align:center;  }
+.hash_tag {  height:500px;  padding-top:200px; margin:0 auto;}
+.hash_tag .tag {overflow:hidden;  line-height:60px; margin:0 auto;  }
+.hash_tag .tag li { padding-right:10px; float:left;}
+.hash_tag .tag li a { font-size:35px; font-weight:700; text-decoration:none; }
+.hash_tag .first { width:370px;}
+.hash_tag .swim:hover { background-image:url('../img/swim.gif');}
+.hash_tag .first li:first-child a { color:#7cb9e5;}
+.hash_tag .second { width:400px;}
+.hash_tag .third { width:370px;}
+.hash_tag .third li:nth-child(2) a{ color:#afdab2;}
+.hash_tag .fourth { width:190px;}
+.hash_tag .fourth a {color:#f6be45;}
+.hash_tag .fourth a:hover {color:#f6be45;}
+
+
 
 
 
