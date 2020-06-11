@@ -38,7 +38,7 @@
 <div id="header"></div>
 
 <div class="btn">+ 필터</div>
-<div id="filter">
+<div class="filter">
   <div onclick="history.back();" class="close">- 필터</div>
   	<div class="filter_menu">
 		<div class="filter_size">
@@ -90,20 +90,20 @@
 <!-----------------필터------------------->	
 <script>
 $(".btn").click(function() {
-  $("#filter,html").addClass("open");
+  $(".filter,html").addClass("open");
   window.location.hash = "#open";
 });
 
 window.onhashchange = function() {
   if (location.hash != "#open") {
-    $("#filter,html").removeClass("open");
+    $(".filter,html").removeClass("open");
   }
 };
 </script>
 <!-----------------필터------------------->	
 	
 		<div id="container">
-			<div id="shop_all">
+			<div class="shop_all">
 				<ul>
 					<li><a href="#">전상품</a></li>
 					<li><a href="#">아우터웨어</a></li>
@@ -117,7 +117,7 @@ window.onhashchange = function() {
 				</ul>	
 			</div>
 
-			<div id="product" class="shop_category_product">
+			<div class="product" class="shop_category_product">
 				<ul>
 					<li>
 						<div class="icon">
@@ -1007,9 +1007,9 @@ window.onhashchange = function() {
 
 		</div><!-- container -->
 <!-----------------카카오상담 버튼 ------------------->
-<div id="kakao"><a href="https://accounts.kakao.com/"><img src="../img/kakao.png" target="_blank" ></a></div>
+<div class="kakao"><a href="https://accounts.kakao.com/"><img src="../img/kakao.png" target="_blank" ></a></div>
 <!-----------------top 버튼 ------------------->			
-<div id="topButton" style="cursor: pointer"><img src="../img/topbutton.png" id="topButtonImg" ></div>
+<div class="topButton" style="cursor: pointer"><img src="../img/topbutton.png" id="topButtonImg" ></div>
 
 <!-----------------top 버튼 ------------------->	
 <script>
@@ -1018,13 +1018,13 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 	    // top button controll
 	    if ($(this).scrollTop() > 500) {
-	        $('#topButton').fadeIn();
+	        $('.topButton').fadeIn();
 	    } else {
-	        $('#topButton').fadeOut();
+	        $('.topButton').fadeOut();
 	    }
 	});
 
-	$("#topButtonImg").click(function() {
+	$(".topButtonImg").click(function() {
 		$('html, body').animate({scrollTop:0}, '200');
 	});
 });
