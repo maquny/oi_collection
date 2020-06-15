@@ -1,11 +1,11 @@
 @charset "utf-8";
 /* intro */
-.d_logo{position:absolute;top:20px;left:20px;z-index:100;}
+.d_logo{position:absolute; top:20px;left:20px;z-index:100; }
 .oi_logo{width:300px;}
 .byoioi_logo{width:250px;}
 .oicollection_mini_logo{width:50px;position:absolute;left:-60px}
 .byoioi_mini_logo{width:50px;position:absolute;left:40px}
-.quick_menu{width:80px;background-color:#fff;position:fixed;top:0;right:0;z-index:110;bottom:0;transition:.5s}
+.quick_menu{width:80px; background-color:#fff; position:fixed;top:0;right:0; z-index:110; bottom:0; transition:.5s}
 .quick_menu_open{font-size:12px;position:absolute;top:20%;left:-65px;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-transition:all .3s;transition:all .3s;padding:10px;background-color:#fff;border-left:solid 1px #ccc;border-bottom:solid 1px #ccc;border-right:solid 1px #ccc;cursor:pointer;border-radius: 0 0 5px 5px;}
 .quick_cont{padding:10px;}
 .quick_cont img {width:100%;}
@@ -24,7 +24,7 @@ header h1{width:250px; margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
 
 /*  띠팝업  */
-.header_notice{width:100%; height:30px; background-color:#64c063; font-size:10pt; z-index:31; overflow:hidden; }
+.header_notice{width:100%; height:30px; background-color:#000; font-size:10pt; z-index:31; overflow:hidden; }
 .header_notice marquee{color:#fff; line-height:30px;scrolldelay:1000; z-index:2;margin:0;padding:0;}
 
 .header_menu{position:relative; height:100px;}
@@ -119,8 +119,15 @@ footer{padding-bottom:30px;}
 .shop_all ul{ text-align:center; }
 .shop_all ul>li{ display:inline-block; padding:0 10px; }
 
-
-
+.hash_tag {  height:500px;  padding-top:200px; margin:0 auto;}
+.hash_tag .tag {overflow:hidden;  line-height:60px; margin:0 auto;  }
+.hash_tag .tag li { padding-right:20px; float:left;}
+.hash_tag .tag li a { font-size:35px; font-weight:700; text-decoration:none; }
+.hash_tag .first { width:400px;}
+.hash_tag .swim:hover { background-image:url('../img/swim.gif');}
+.hash_tag .second { width:430px;}
+.hash_tag .third { width:400px;}
+.hash_tag .fourth { width:200px;}
 
 
 /* 필터 */
@@ -207,11 +214,20 @@ input::-moz-input-placeholder {color:#ccc; }
 .store {position:relative; margin-top:-100px; }
 .store .swiper-container {width:100%; height:100vh;}
 .store .swiper-slide { text-align:center; font-size:18px; background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;background-size:cover; background-position:center center; }
-.store .ad_text { position:absolute; bottom:100px; right:150px; color:#fff; z-index:100; line-height:30px; font-size:12px;  }
 .store span.flagship {font-weight:700; color:#fff; font-size:16px; }
+.offline_store {  overflow:hidden; font-size:12px;}
+.country {width:50%; float:left; font-weight:600; }
+.tab { border-left:none;overflow:hidden; }
+.tab li { width:100%; text-align:right; box-sizing:border-box; display:inline-block; padding:25px; padding-right:100px;  cursor:pointer;  }
+.tab li.on { text-decoration:underline; }
+.tab_con { width:50%; float:left; display:table; }
+.tab_con div {display:none; padding:20px 0 0 100px; background-color:#000;height:476px; line-height:30px;  vertical-align:middle;}
+.tab_con li {color:#fff; }
+.tab_con .korea li:first-child { font-weight:600; font-size:14px; }
+
 
 /* 상세페이지 */
-.detail { width:100%; margin:-200px 0 100px 0;   }
+.detail { width:100%; margin:-200px 0 100px 0;  }
 .detail .lookbook {width:50%; float:left; }
 .detail .lookbook img {width:100%; }
 
@@ -247,19 +263,6 @@ input::-moz-input-placeholder {color:#ccc; }
 #container .wish ul li img {width:100%; }
 
 
-.hash_tag {  height:500px;  padding-top:200px; margin:0 auto;}
-.hash_tag .tag {overflow:hidden;  line-height:60px; margin:0 auto;  }
-.hash_tag .tag li { padding-right:20px; float:left;}
-.hash_tag .tag li a { font-size:35px; font-weight:700; text-decoration:none; }
-.hash_tag .first { width:400px;}
-.hash_tag .swim:hover { background-image:url('../img/swim.gif');}
-.hash_tag .first li:first-child a { color:#7cb9e5;}
-.hash_tag .second { width:430px;}
-.hash_tag .third { width:400px;}
-.hash_tag .third li:nth-child(2) a{ color:#afdab2;}
-.hash_tag .fourth { width:200px;}
-.hash_tag .fourth a {color:#f6be45;}
-.hash_tag .fourth a:hover {color:#f6be45;}
 
 
 
