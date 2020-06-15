@@ -24,7 +24,7 @@ header h1{width:250px; margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
 
 /*  띠팝업  */
-.header_notice{width:100%; height:30px; background-color:#000; font-size:10pt; z-index:31; overflow:hidden; }
+.header_notice{width:100%; height:30px;  background-color:#e5e5e5; font-size:10pt; z-index:31; overflow:hidden; }
 .header_notice marquee{color:#fff; line-height:30px;scrolldelay:1000; z-index:2;margin:0;padding:0;}
 
 .header_menu{position:relative; height:100px;}
@@ -93,7 +93,7 @@ footer{padding-bottom:30px;}
 /* 쇼핑하기 - 신상품 */
 .shop_new{width:100%; height:20px; line-height:20px;  margin:20px 0; font-size:12px; }
 .shop_new ul{width:100px; box-sizing:border-box; overflow:hidden; margin:0 auto;}
-.shop_new ul>li{width:100px; text-align:center; }
+.shop_new ul>li{ width:100px; text-align:center; }
 
 .product{width:100%; overflow:hidden; margin-bottom:5%}
 .product ul:after {content:''; display:block; clear:both;}
@@ -107,10 +107,10 @@ footer{padding-bottom:30px;}
 .product li .icon img{width:16px; opacity:0.8; margin-left:5px; float:left;  }
 .product li:hover .icon,
 .product li:hover .product_infor{opacity:1;}
-.product .product_infor{position:absolute;top:0;left:0; width:100%;height:100%; transition:.4s; opacity:0; z-index:20; background-color:rgb(255,255,255,.3); }
+.product .product_infor{ position:absolute; top:0;left:0; width:100%;height:100%; transition:.4s; opacity:0; z-index:20; background-color:rgb(255,255,255,.3); }
 .product .product_infor a .product_name{display:table-cell; vertical-align:bottom; padding:10px;  font-size:12px; font-weight:500;}
 .product .product_infor a .product_name p + p{padding-top:5px;}
-.product .product_infor a{display:table; width:100%;height:100%; }
+.product .product_infor a{ display:table; width:100%; height:100%; }
 .product .product_infor a:hover{text-decoration:none;}
 
 
@@ -207,8 +207,8 @@ input::-moz-input-placeholder {color:#ccc; }
 
 
 /* 회사소개 */
-.company_page {width:100%;height:100vh; background:#000; line-height:50px;}
-.company_profile {font-size:12px; color:#fff; text-align:center; padding-top:20%; }
+.company_page {width:100%;height:100vh; line-height:50px;}
+.company_profile {font-size:12px; color:#333; text-align:center; padding-top:20%; }
 
 /* 매장 */
 .store {position:relative; margin-top:-100px; }
