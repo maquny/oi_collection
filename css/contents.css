@@ -19,22 +19,22 @@
 .swiper-slide.swiper-slide-active a img {transform: translate3d(0px, 0px, 0px);transition-duration:600ms;}
 
 /*  헤더  */
-header{width:100%;position:fixed;top:0;left:0;z-index:2}
-header h1{width:250px;margin:0 auto;margin-top:10px}
+header{width:100%; position:fixed;top:0;left:0; z-index:2}
+header h1{width:250px; margin:0 auto;margin-top:10px}
 header h1 img{width:100%}
 
 /*  띠팝업  */
-.header_notice{width:100%;height:30px;background-color:#64c063;font-size:10pt;z-index:31; overflow:hidden; }
-.header_notice marquee{color:#fff;line-height:30px;scrolldelay:1000;z-index:2;margin:0;padding:0;}
+.header_notice{width:100%; height:30px; background-color:#64c063; font-size:10pt; z-index:31; overflow:hidden; }
+.header_notice marquee{color:#fff; line-height:30px;scrolldelay:1000; z-index:2;margin:0;padding:0;}
 
-.header_menu{position:relative;height:100px;}
+.header_menu{position:relative; height:100px;}
 .header_menu:after{content:'';display:block;clear:both}
-.logo{width:300px;display:inline-block;position:absolute;top:30px;left:50%;margin-left:-150px}
-.logo img{width:100%}
+.logo{width:300px; display:inline-block; position:absolute;top:30px;left:50%; margin-left:-150px}
+.logo img{width:100%;}
 
-.header_open_menu{float:left;width:400px; margin-left:3%; margin-top:23px;}
+.header_open_menu{float:left; width:500px; margin-left:3%; margin-top:23px;}
 
-.header_open_menu li{float:left;line-height:20px;font-size:12px;}
+.header_open_menu li{line-height:20px;font-size:12px; }
 .header_open_menu li a{float:left;padding:17px 10px 18px 10px;}
 .header_open_menu.menu_icon{float:right;margin-right:50px;margin-left:0;width:auto;}
 .header_open_menu.menu_icon li{float:left;margin-left:10px}
@@ -49,7 +49,7 @@ header h1 img{width:100%}
 
 .header_open_menu li.open ul{display:block;position:absolute;top:35px;}
 .header_open_menu li ul{display:none;padding-top:10px}
-.header_open_menu li ul li{float:none;width:80px;height:18px;line-height:18px}
+.header_open_menu li ul li{float:none;width:80px;height:18px;line-height:18px;  border:1px solid red; }
 .header_open_menu li ul li a{float:none;padding:5px 10px;}
 
 #pinContainer{width:100%;height:100%;overflow:hidden}
@@ -211,11 +211,11 @@ input::-moz-input-placeholder {color:#ccc; }
 .store span.flagship {font-weight:700; color:#fff; font-size:16px; }
 
 /* 상세페이지 */
-.detail { width:100%; margin:-100px 0 100px 0;   }
+.detail { width:100%; margin:-200px 0 100px 0;   }
 .detail .lookbook {width:50%; float:left; }
 .detail .lookbook img {width:100%; }
 
-.product_info {width:45%;  height:500px; position:fixed; top:200px; right:0;}
+.product_info {width:40%;  height:500px; position:fixed; top:200px; right:0;}
 .colorchip li { width:15px; height:15px;  float:left; margin-right:5px;  }
 .colorchip li:nth-child(1) { background:green;}
 .colorchip li:nth-child(2) { background:black;  }
