@@ -32,6 +32,40 @@
 			</ul>
 
 			<ul class="menu_icon header_open_menu">
+				<li class="list search"><a href="#"  data-popup-open="example" ><img src="../img/search.png"></a>
+					 <div class="popup" data-popup="example">
+   						 <div class="popup-inner">
+    					  <div class="popup-contents">
+     						 <a class="popup-close" data-popup-close="example" href="#">X</a>
+							  <p class="search_text">검색어를 입력하세요</p>
+						  </div>
+						</div>
+					</div>
+				</li>
+<script>
+$(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+        e.preventDefault();
+    });
+
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+        e.preventDefault();
+    });
+});
+</script>
+
+
+
+
+
 				
 				<li class="list mall"><a href="#">KR</a>
 					<ul class="submenu">
@@ -40,7 +74,7 @@
 						<li><a href="#">JP</a></li>
 					</ul>
 				</li>
-				<li class="list search"><a href="#"><img src="../img/search.png"></a></li>
+			
 				<li class="list intro"><a href="oioi_main.html"><img src="../img/intro.png"></a></li>
 				<li class="list mypage"><a href="#"><img src="../img/mypage.png"></a></li>
 				<li class="list cart">
@@ -52,6 +86,9 @@
 			</ul>
 		</div>
 	</header>
+
+
+	
 
 </body>
 </html>
