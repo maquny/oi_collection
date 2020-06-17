@@ -222,10 +222,10 @@ input::-moz-input-placeholder {color:#ccc; }
 .tab li { width:100%; text-align:right; box-sizing:border-box; display:inline-block; padding:25px; padding-right:100px;  cursor:pointer;  }
 .tab li.on { text-decoration:underline; }
 .tab_con { width:50%; float:left; display:table; }
-.tab_con .cont{display:none; padding-left:100px; background-color:#000;height:496px; line-height:30px;  vertical-align:middle;}
-.tab_con .cont div{display:table-cell;height:496px;line-height:30px;vertical-align:middle}
+.tab_con .cont {display:none; padding-left:100px; background-color:#000;height:496px; line-height:30px;  vertical-align:middle;}
+.tab_con .cont div {display:table-cell;height:496px;line-height:30px;vertical-align:middle}
 .tab_con p {color:#fff; }
-.tab_con .korea li:first-child { font-weight:600; font-size:14px; }
+.tab_con p a {color:#fff; }
 
 
 /* 상세페이지 */
