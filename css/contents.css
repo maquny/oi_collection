@@ -142,6 +142,7 @@ footer{padding-bottom:30px;}
 .filter .filter_menu ul li:nth-child(2n) { margin-left:10px;}
 .filter .filter_menu ul li:nth-child(3n) { margin-left:10px;}
 .filter .filter_menu ul li:nth-child(2n+1) { margin-left:10px;}
+.filter .filter_search { position:absolute; bottom:100px; right:30px; float:right; padding:10px;  }
 
 
 /* 에디토리얼 */ 
@@ -207,8 +208,8 @@ input::-moz-input-placeholder {color:#ccc; }
 
 
 /* 회사소개 */
-.company_page {width:100%;height:100vh; line-height:50px;}
-.company_profile {font-size:12px; color:#333; text-align:center; padding-top:20%; }
+.company_page {width:100%;height:1000px; line-height:50px; border:1px solid red; }
+.company_profile {font-size:12px; color:#333; text-align:center; padding-top:20%;  }
 
 /* 매장 */
 .store {position:relative; margin-top:-100px; }
@@ -221,10 +222,10 @@ input::-moz-input-placeholder {color:#ccc; }
 .tab li { width:100%; text-align:right; box-sizing:border-box; display:inline-block; padding:25px; padding-right:100px;  cursor:pointer;  }
 .tab li.on { text-decoration:underline; }
 .tab_con { width:50%; float:left; display:table; }
-.tab_con .cont{display:none; padding-left:100px; background-color:#000;height:496px; line-height:30px;  vertical-align:middle;}
-.tab_con .cont div{display:table-cell;height:496px;line-height:30px;vertical-align:middle}
+.tab_con .cont {display:none; padding-left:100px; background-color:#000;height:496px; line-height:30px;  vertical-align:middle;}
+.tab_con .cont div {display:table-cell;height:496px;line-height:30px;vertical-align:middle}
 .tab_con p {color:#fff; }
-.tab_con .korea li:first-child { font-weight:600; font-size:14px; }
+.tab_con p a {color:#fff; }
 
 
 /* 상세페이지 */
