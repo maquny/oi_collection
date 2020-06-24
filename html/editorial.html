@@ -33,15 +33,13 @@
 </head>
 
 <body>
-	<div id="wrap">
-		<div id="header"></div>
-
-		<div id="container">
+<div id="wrap">
+	<div id="header"></div>
+	<div id="container">
 		<div class="editorial">
 			<div class="resort20_editorial" alt="최근시즌 에디토리얼">
 				<a href="#"><img src="../img/20resort_ed.jpg"></a>
 			</div>
-
 			<div id="drag" class="past_editorial">
 				<div class="draggable1">
   					<a href="#"><img src="../img/20ss.jpg"></a>
@@ -67,11 +65,12 @@
 				<div class="draggable8" >
  					<a href="#"><img src="../img/16ss.jpg"></a>
 				</div> 
-				
-				</div><!--drag-->
-		</div><!-- editorial -->
-		</div><!-- container-->
-		<script>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</div>
+<script>
  		 $( function() {
   		 $( ".draggable1" ).draggable({ scroll: true });
    		 $( ".draggable2" ).draggable({ scroll: true, scrollSensitivity: 100 });
@@ -81,14 +80,8 @@
    		 $( ".draggable6" ).draggable({ scroll: true, scrollSensitivity: 100 });
    		 $( ".draggable7" ).draggable({ scroll: true, scrollSpeed: 100 });
    		 $( ".draggable8" ).draggable({ scroll: true, scrollSensitivity: 100 });
-   		
  		 } );
-		</script>
 
-		<div id="footer"></div>
-	</div>
-
-<script>
 	$(document).ready(function(){
 		$('.header_open_menu li.list').hover(function(){
 			var target = $(this);

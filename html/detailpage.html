@@ -26,8 +26,6 @@
 	<script type="text/javascript" src="../js/funyalert.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
-
-	<!--상페 설명 스크립트 -->
 	<script src="../js/jquery-1.12.4.js"></script>
 	<script src="../js/jquery-ui.js"></script>
 
@@ -52,14 +50,14 @@
 						<li><img src="../img/img6.jpg"></li>
 						<li><img src="../img/img7.jpg"></li>
 					</ul>
-				</div><!--product_img-->
+				</div>
 				<div class="product_info">
 					<div class="colorchip">
 						<ul>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 						</ul>
-					</div><!--colorchip-->
+					</div>
 					<div class="name">
 						<p>RIBBON SLIP ONEPIECE_RED</p>
 						<p class="price">102,000</p>
@@ -67,7 +65,7 @@
 							<li><a href="#">S</a></li>
 							<li><a href="#">M</a></li>
 						</ul>
-					</div><!--name-->
+					</div>
 					<div id="tabs">
   						<ul class="box">
   						  <li class="info_title"><a href="#tabs-1">상품설명	</a></li>
@@ -106,27 +104,17 @@
 									텐션&nbsp;&nbsp;없음<br><br>
 									세탁 시 제품 내부의 케어라벨을 꼭 확인해주시기 바랍니다.</p>
 							  </div>
-							</div>
-			  <script>
-				 $( function() {
-				 $( "#tabs" ).tabs();
-				 } );
-			  </script>
-
-							  <div class="buy">
-							  	<ul>
-							  		<li><a href="#">구매하기</a></li>
-							  		<li><a href="#">장바구니</a></li>
-							  		<li><a href="#">관심상품</a></li>
-							  	</ul>
-							  </div><!--buy -->
-							  <div class="naverpay">
-							  	<img src="../img/naverpay.png">
-							  </div><!--naverpay -->
-								</div><!--product_info-->
-							 </div><!--detail_page-->
-
-
+					</div>
+		  			<div class="buy">
+						<ul>
+							<li><a href="#">구매하기</a></li>
+							<li><a href="#">장바구니</a></li>
+							<li><a href="#">관심상품</a></li>
+						</ul>
+					</div>
+					<div class="naverpay"><img src="../img/naverpay.png"></div>
+				</div>
+			</div>			  
 				<div class="wishlist">
 					<div class="wish">
 						<h4>관련 상품</h4>
@@ -135,42 +123,37 @@
 								<p><a href="#">FLOWER POT MINI BAG<br>79,000</a></p>
 							</li>
 							<li><a href="#"><img src="../img/wish2.jpg"></a>
-							<p><a href="#">FLOWER POT MINI BAG<br>79,000</a></p>
+								<p><a href="#">FLOWER POT MINI BAG<br>79,000</a></p>
 							</li>
 						</ul>
-					</div><!-- wish-->
-				</div><!--wishlist -->
-	</div><!--container-->
-
-		<!-----------------카카오상담 버튼 ------------------->
-			<div class="kakao"><a href="https://accounts.kakao.com/">
-			<img src="../img/kakao.png" target="_blank" ></a></div>
-		<!-----------------top 버튼 ------------------->			
+					</div>
+				</div>
+		</div>
+			<div class="kakao"><a href="https://accounts.kakao.com/"><img src="../img/kakao.png" target="_blank" ></a></div>	
 			<div class="topButton" style="cursor: pointer"><img src="../img/topbutton.png" id="topButtonImg" ></div>
-								
-					<script>
-						$(document).ready(function() {
-							$(window).scroll(function() {
-								    // top button controll
-								    if ($(this).scrollTop() > 500) {
-								        $('.topButton').fadeIn();
-								    } else {
-								        $('.topButton').fadeOut();
-								    }
-								});
-
-								$("#topButtonImg").click(function() {
-									$('html, body').animate({scrollTop:0}, '200');
-								});
-
-							});
-					</script><!-----------------top 버튼 ------------------->	
-
 		<div id="footer"></div>
-	</div><!-- wrap -->
+	</div>
 
 
 <script>
+	 $( function() {
+	 $( "#tabs" ).tabs();
+	 } );
+
+	$(document).ready(function() {
+	$(window).scroll(function() {
+		 if ($(this).scrollTop() > 500) {
+		 $('.topButton').fadeIn();
+		 } else {
+			$('.topButton').fadeOut();
+			  }
+				});
+
+	$("#topButtonImg").click(function() {
+	$('html, body').animate({scrollTop:0}, '200');
+	});
+	});
+
 	$(document).ready(function(){
 		$('.header_open_menu li.list').hover(function(){
 			var target = $(this);
